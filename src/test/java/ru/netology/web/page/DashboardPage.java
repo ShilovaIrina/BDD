@@ -15,7 +15,7 @@ public class DashboardPage {
     private final String balanceFinish = " р.";
     private final SelenideElement heading = $("[data-test-id=dashboard]");
     private final ElementsCollection cards = $$(".list__item div");
-    private final SelenideElement reloadButton = $("data-test-id=action-reload");
+    private final SelenideElement reloadButton = $("[data-test-id=action-reload]");
 
     public DashboardPage() {
         heading.shouldBe(Condition.visible);
